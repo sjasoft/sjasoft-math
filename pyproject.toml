@@ -20,13 +20,8 @@ where = ["src"]
 namespaces = true
 
 [tool.uv.sources]
-sjasoft-utils = { path = "../sjasoft-utils" }
+sjasoft-utils = { path = "../sjasoft-utils", editable = true }
 
 [build-system]
 requires = ["setuptools>=61", "wheel"]
 build-backend = "setuptools.build_meta"
-
-[dependency-groups]
-dev = [
-    "sjasoft-utils",
-]
